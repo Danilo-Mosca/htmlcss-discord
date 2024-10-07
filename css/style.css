@@ -1,0 +1,320 @@
+/* Generals */
+/* Palette colori */
+:root {
+    --color-light: #F6F6F6;
+    --color-dark: #23272A;
+    --color-blue: #255EE9;
+    --color-violet: #748ADB;
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--color-dark);
+}
+
+/* Imposto lo scroll beahavior per dare più stile al click dei pulsanti con scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Classe di debug */
+.debug {
+    border: 1px solid red;
+}
+
+/* Header */
+header ul li a {
+    padding: 15px 18px;
+    color: white;
+    /* Tolgo la sottolineatura alle ancore */
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+    color: var(--color-dark);
+}
+
+/* tolgo i pallini */
+ul {
+    list-style: none;
+}
+
+/* Larghezza dei container */
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 15px 10px;
+}
+
+.small-container {
+    color: var(--color-light);
+    max-width: 800px;
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+}
+
+/* Colori di sfondo delle section dell'header e del footer */
+.color-blue-header-hero {
+    background-color: var(--color-blue);
+}
+
+.color-light-backgroud {
+    background-color: var(--color-light);
+}
+
+.color-dark-backgroud-footer {
+    background-color: var(--color-dark);
+}
+
+/* Flexbox utilizzate */
+.flex-display {
+    display: flex;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* Allineamento centrato items */
+.align-items {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    /* column-gap: 20px; */
+    gap: 30px;
+}
+
+
+/* div contenente sia la bandiera che il testo "italiano" */
+.language {
+    display: flex;
+    gap: 5px;
+    line-height: 18px;
+    padding: 20px 0px;
+}
+
+/* Classe che contien l'immagine della bandiera */
+.italy-flag {
+    width: 20%;
+}
+
+/* Testi */
+.text-white {
+    color: var(--color-light);
+}
+
+.text-dark {
+    color: var(--color-dark);
+}
+
+/* Main - Larghezza delle immagini e dei contenuti testuali del main */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+#call-to-action {
+    padding-bottom: 80px;
+}
+
+.image {
+    width: 60%;
+}
+
+/* Imposto tutte le immagini nella classe image come immagini fluide, assegnandogli il width: 100% in modo da non mandarle in overflow */
+.image img {
+    width: 100%;
+}
+
+.content {
+    width: 40%;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 3.2em;
+}
+
+h3 {
+    font-size: 2.3em;
+}
+
+h1,
+h2,
+h3 {
+    padding-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.h3-stars {
+    background-image: url('../img/stars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 30px 50px;
+}
+
+/* footer */
+.footer-up {
+    font-size: 18px;
+    padding-top: 50px;
+    border-bottom: 1px solid var(--color-violet);
+}
+
+.footer-up li:first-of-type,
+.footer-up h4:first-of-type {
+    color: var(--color-violet);
+}
+
+.footer-up h4:first-of-type {
+    font-size: 32px;
+}
+
+/* Distanzio le voci del menu nel footer */
+.footer-up ul,
+.footer-up .social {
+    line-height: 40px;
+}
+
+.footer-down {
+    padding-bottom: 50px;
+}
+
+span i {
+    width: 50px;
+}
+
+/* Pulsanti */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+button {
+    color: var(--color-light);
+    background-color: var(--color-violet);
+    text-align: center;
+    line-height: 30px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    border: 0px;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#button-header {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    line-height: 10px;
+    font-size: 1em;
+}
+
+#button-hero-left {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+#button-hero-right {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+#button-footer {
+    line-height: 10px;
+    font-size: 1em;
+    padding: 12px 12px;
+}
+
+.button-hero {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+/* Configurazioni classi dell'immagine vettoriale della wave (onda)  */
+
+/* Classe generale dell'immagine "wave.svg" */
+.wave-up .wavePath-haxJK1 {
+    fill: var(--color-light);
+}
+/* Classe non ruotata */
+.wave-up .wave-1hkxOo {
+    margin-bottom: 50px;
+    padding-top: 50px;
+    background-color: white;
+    /* Volendo posso anche impostare un altezza o largezza
+    height: 150px;
+    width: 80%;
+    --------------------------------------------------- */
+}
+/* Classe ruotata */
+.wave-down .wavePath-haxJK1 {
+    fill: var(--color-light);
+}
+.wave-down .wave-1hkxOo {
+    /* La imposto come elemento block altrimenti si vedrebbe una linea orizzontale di spaziatura */
+    display: block;
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: white;
+    /* Ruoto l'immagine wave.svg di 180gradi per metterla a testa in giù  ed invertire i colori */
+    transform: rotate(180deg);
+}

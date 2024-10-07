@@ -92,6 +92,15 @@ ul {
     justify-content: space-between;
 }
 
+/* Pulsanti dellea sezione hero */
+.button-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
 /* Allineamento centrato items */
 .align-items {
     align-items: center;
@@ -239,54 +248,49 @@ span i {
 /* Pulsanti */
 .btn {
     display: inline-block;
-    padding: 6px 12px;
-    border-radius: 10px;
+    text-align: center;
+    padding: 6px 15px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
     background-color: var(--color-light);
     color: var(--color-dark);
     text-decoration: none;
 }
-
-button {
-    color: var(--color-light);
-    background-color: var(--color-violet);
-    text-align: center;
-    line-height: 30px;
-    padding: 12px 18px;
-    border-radius: 25px;
-    border: 0px;
-    font-size: 1.2em;
-    font-weight: 500;
-    cursor: pointer;
+/* Assegno le proprietà al passaggio del mouse */
+.btn:hover {
+    box-shadow: 0px 3px 8px var(--color-dark);
+    text-decoration: underline;
 }
 
-#button-header {
-    color: var(--color-dark);
-    background-color: var(--color-light);
-    line-height: 10px;
-    font-size: 1em;
+/* Pulsanti sezione hero */
+.btn-hero-left {
+    padding: 14px 15px;
 }
-
-#button-hero-left {
-    color: var(--color-dark);
-    background-color: var(--color-light);
-}
-
-#button-hero-right {
+.btn-hero-right {
+    padding: 14px 15px;
     color: var(--color-light);
     background-color: var(--color-dark);
 }
 
-#button-footer {
-    line-height: 10px;
-    font-size: 1em;
-    padding: 12px 12px;
+/* Pulsante sezione call to action */
+.btn-cta {
+    padding: 15px 15px;
+    background-color: var(--color-violet);
+    color: var(--color-light);
+}
+.btn-cta:hover {
+    color: var(--color-dark)
 }
 
-.button-hero {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px;
+/* Pulsante sezione footer down */
+.btn-footer {
+    background-color: var(--color-violet);
+    color: var(--color-light);
+}
+.btn-footer:hover {
+    color: var(--color-dark)
 }
 
 /* Configurazioni classi dell'immagine vettoriale della wave (onda)  */

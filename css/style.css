@@ -33,15 +33,19 @@ html {
 header ul li a {
     padding: 15px 18px;
 }
-header ul li a, .menu-footer li a {
+
+header ul li a,
+.menu-footer li a {
     color: white;
     /* Tolgo la sottolineatura alle ancore */
     text-decoration: none;
 }
+
 header ul li a:hover {
     text-decoration: underline;
     color: var(--color-dark);
 }
+
 .menu-footer li a:hover {
     text-decoration: underline;
     color: var(--color-violet);
@@ -213,6 +217,7 @@ p {
     line-height: 1.5;
 }
 
+/* Imposto lo sfondo con le stelle al titolo in h3 nella sezione call-to-action */
 .h3-stars {
     background-image: url('../img/stars.svg');
     background-size: contain;
@@ -247,8 +252,9 @@ p {
     padding-bottom: 50px;
 }
 
-span i {
-    width: 50px;
+/* Imposto la grandezza delle icone social nel footer a 26 pixel */
+.social-icons i {
+    font-size: 26px;
 }
 
 /* Pulsanti */

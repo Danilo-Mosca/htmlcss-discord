@@ -29,18 +29,24 @@ html {
     border: 1px solid red;
 }
 
-/* Header */
+/* Menu a lista di HEADER e FOOTER */
 header ul li a {
     padding: 15px 18px;
+}
+header ul li a, .menu-footer li a {
     color: white;
     /* Tolgo la sottolineatura alle ancore */
     text-decoration: none;
 }
-
 header ul li a:hover {
     text-decoration: underline;
     color: var(--color-dark);
 }
+.menu-footer li a:hover {
+    text-decoration: underline;
+    color: var(--color-violet);
+}
+
 
 /* tolgo i pallini */
 ul {
@@ -258,6 +264,7 @@ span i {
     color: var(--color-dark);
     text-decoration: none;
 }
+
 /* Assegno le proprietà al passaggio del mouse */
 .btn:hover {
     box-shadow: 0px 3px 8px var(--color-dark);
@@ -268,6 +275,7 @@ span i {
 .btn-hero-left {
     padding: 14px 15px;
 }
+
 .btn-hero-right {
     padding: 14px 15px;
     color: var(--color-light);
@@ -280,6 +288,7 @@ span i {
     background-color: var(--color-violet);
     color: var(--color-light);
 }
+
 .btn-cta:hover {
     color: var(--color-dark)
 }
@@ -289,6 +298,7 @@ span i {
     background-color: var(--color-violet);
     color: var(--color-light);
 }
+
 .btn-footer:hover {
     color: var(--color-dark)
 }
@@ -299,6 +309,7 @@ span i {
 .wave-up .wavePath-haxJK1 {
     fill: var(--color-light);
 }
+
 /* Classe non ruotata */
 .wave-up .wave-1hkxOo {
     margin-bottom: 50px;
@@ -309,10 +320,12 @@ span i {
     width: 80%;
     --------------------------------------------------- */
 }
+
 /* Classe ruotata */
 .wave-down .wavePath-haxJK1 {
     fill: var(--color-light);
 }
+
 .wave-down .wave-1hkxOo {
     /* La imposto come elemento block altrimenti si vedrebbe una linea orizzontale di spaziatura */
     display: block;

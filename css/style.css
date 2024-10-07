@@ -141,18 +141,27 @@ ul {
 }
 
 
-/* div contenente sia la bandiera che il testo "italiano" */
+/* Sezione scelta della lingua nel footer */
+/* div contenente sia la bandiera che il form select */
 .language {
     display: flex;
     gap: 5px;
-    line-height: 18px;
-    padding: 20px 0px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0px;
 }
 
-/* Classe che contien l'immagine della bandiera */
+/* Classe che contiene l'immagine della bandiera */
 .italy-flag {
     width: 20%;
 }
+/* Classe della form select per la scelta della lingua */
+.select-language {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: none;
+}
+/* Fine sezione scelta della lingua nel footer */
 
 /* Testi */
 .text-white {
@@ -315,7 +324,6 @@ p {
 .wave-up .wavePath-haxJK1 {
     fill: var(--color-light);
 }
-
 /* Classe non ruotata */
 .wave-up .wave-1hkxOo {
     margin-bottom: 50px;
@@ -326,12 +334,10 @@ p {
     width: 80%;
     --------------------------------------------------- */
 }
-
 /* Classe ruotata */
 .wave-down .wavePath-haxJK1 {
     fill: var(--color-light);
 }
-
 .wave-down .wave-1hkxOo {
     /* La imposto come elemento block altrimenti si vedrebbe una linea orizzontale di spaziatura */
     display: block;
@@ -341,3 +347,4 @@ p {
     /* Ruoto l'immagine wave.svg di 180gradi per metterla a testa in giù  ed invertire i colori */
     transform: rotate(180deg);
 }
+/* ------------------------------------------------------- */
